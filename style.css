@@ -1,15 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
 body {
     background-color: #fefefe;
 }
+main {
+    max-width: 765px;
+    margin: 0 auto;
+}
 h1 {
     color:darkgreen;
+    margin-top: 80px;
 }
 h2 {
     color: #1460aa;
 }
-section {
+.section {
     background-color: #cdc1f8 ;
 }
-.naglowek {
+.section__header {
     color:blueviolet;
+}
+.section__image {
+    max-width: 100%;
+    display: block;
+}
+.navigation {
+    background-color: #1460aa;
+    padding: 20px;
+}
+.navigation__link {
+    color: white;
+}
+.header {
+    position: sticky;
+    top: 0;
+}
+.footer {
+    max-width: 765px;
+    margin: 0 auto;
 }

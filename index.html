@@ -4,28 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona Piotra tworzona podczas WTF</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Strona pierwsza</a>
-      <a href="accessibility.html">a11y</a>
-      <a href="linki.html">Links</a>
-    </nav>
+    <header class="header">
+      <nav class="navigation">
+        <a href="index.html" class="navigation__link">Strona pierwsza</a>
+        <a href="accessibility.html" class="navigation__link">a11y</a>
+        <a href="linki.html" class="navigation__link">Links</a>
+      </nav>
+    </header>
     <main>
-      <h1>Piotr Gronowski - strona domowa</h1>
-      <section>
-        <h2 class="naglowek">Kim jestem?</h2>
-        <img src="Designer.jpg" alt="zamyslony facet przed lapkiem" />
-        <p>
+      <h1>Piotr Gronowski - strona domowa jest do zabaw</h1>
+      <section class="section">
+        <h2 class="section__header">Kim jestem?</h2>
+        <img
+          class="section__image"
+          src="Designer.jpg"
+          alt="zamyslony facet przed lapkiem"
+        />
+        <p class="section__article">
           Hej! Na co dzień uczę wspaniałych ludzi tajnej sztuki frontendu i
           pracuję jako frontend developer w kilku produktach. Poza tym bardzo
           lubię robić zdjęcia i latać dronem. Witam Cię na mojej stronie
           domowej, mam nadzieję, że znajdziesz tu trochę przydatnych rzeczy.
         </p>
+        <p class="i_feel_empty"></p>
       </section>
-      <section>
-        <h2 class="naglowek">Notatki z WTF: Co ten frontend</h2>
+      <section class="section">
+        <h2 class="section__header">Notatki z WTF: Co ten frontend</h2>
         <article>
           <h3>Jak stworzyć prawidłowego HTML-a?</h3>
           <p>
@@ -47,7 +55,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       Strona domowa Piotra zgapiona od Maćka, wszystkie treści są efektem
       szkolenia WTF: Co ten frontend.
     </footer>
